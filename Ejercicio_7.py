@@ -33,5 +33,5 @@ def caballo(inicial, final):
 if __name__ == '__main__':
     inicial_posicion = input("Ingresa la posición inicial en notación algebraica (ej. a3): ")
     final_posicion = input("Ingresa la posición final en notación algebraica (ej. b5): ")
-    resultado = knight(inicial_posicion, final_posicion)
+    resultado = caballo(inicial_posicion, final_posicion)
     print("El número de movimientos requeridos es: ", resultado)
