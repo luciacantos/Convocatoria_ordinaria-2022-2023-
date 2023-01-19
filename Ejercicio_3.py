@@ -9,4 +9,9 @@ def numero_letras(n):
     while n != 4: #4 es el único número que su palaabra tiene el mismo número de letras que su valor
         palabra = ""
         cont = n
+        while cont > 0:
+            palabra += valores[cont % 10]
+            cont = cont // 10
+        resultado.append(palabra)
+        n = len(palabra)
         
