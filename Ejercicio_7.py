@@ -19,7 +19,7 @@ def caballo(inicial, final):
 # cola de búsqueda
     queue = deque([inicial_pos])
 
-    while queue: #movimer el caballo hasta que llegue a la posición final
+    while queue: #mover el caballo hasta que llegue a la posición final
         pos = queue.popleft()
         for mover in movimientos:
             x, y = pos[0] + mover[0], pos[1] + mover[1]
@@ -29,3 +29,9 @@ def caballo(inicial, final):
                 if (x, y) == final_pos:
                     return tablero[x][y]
     return -1
+
+if __name__ == '__main__':
+    inicial_posicion = input("Ingresa la posición inicial en notación algebraica (ej. a3): ")
+    final_posicion = input("Ingresa la posición final en notación algebraica (ej. b5): ")
+    resultado = knight(inicial_posicion, final_posicion)
+    print("El número de movimientos requeridos es: ", resultado)
