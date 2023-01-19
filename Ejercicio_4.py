@@ -28,6 +28,7 @@ def do_math(numbers: str) -> int:
         operation_index += 1
     return round(result)
 
+# Ejemplos del enunciado
 print("24z6 1x23 y369 89a 900b ->",do_math("24z6 1x23 y369 89a 900b"))
 print("24z6 1z23 y369 89z 900b ->",do_math("24z6 1z23 y369 89z 900b"))
 print("10a 90x 14b 78u 45a 7b 34y ->",do_math("10a 90x 14b 78u 45a 7b 34y"))
