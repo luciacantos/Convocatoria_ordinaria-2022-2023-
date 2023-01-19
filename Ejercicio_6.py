@@ -19,3 +19,8 @@ def max_cuerda(diametro, porcentaje): #calcular la máxima longitud de la cuerda
 
     #Redondear paar tener la longitud como un número entero
     return round(longitud_max)
+
+if __name__ == "__main__":
+    diametro = 10
+    porcentaje = 50
+    print("La longitud máxima de la cuerda es",max_cuerda(diametro, porcentaje),"pasos de ogro.")
