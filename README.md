@@ -1,4 +1,6 @@
 # Convocatoria_ordinaria (2022-2023)
+- Enlace link: https://github.com/luciacantos/Convocatoria_ordinaria-2022-2023-/blob/main/README.md
+
 ## EJERCICIO 1
 Para este ejercicio, creará un solucionador de Nonogramas. 
 Si no sabe qué son los nonogramas, puede consultar algunas instrucciones y también probar
