@@ -13,3 +13,9 @@ def max_cuerda(diametro, porcentaje): #calcular la máxima longitud de la cuerda
     #Calcular el área máxima que el burro puede acceder
     porcentaje = porcentaje / 100
     area_max = area * porcentaje
+
+    #Calcular la longitud máxima de la cuerda
+    longitud_max = 2 * math.pi * radio * (1 - math.sqrt(1 - area_max / area))
+
+    #Redondear paar tener la longitud como un número entero
+    return round(longitud_max)
