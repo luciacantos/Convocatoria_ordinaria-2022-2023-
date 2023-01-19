@@ -15,3 +15,17 @@ def caballo(inicial, final):
 # matriz de 8x8 que representa el tablero de ajedrez
     tablero = [[-1] * 8 for _ in range(8)]
     tablero[inicial_pos[0]][inicial_pos[1]] = 0
+
+# cola de búsqueda
+    queue = deque([inicial_pos])
+
+    while queue: #movimer el caballo hasta que llegue a la posición final
+        pos = queue.popleft()
+        for mover in movimientos:
+            x, y = pos[0] + mover[0], pos[1] + mover[1]
+            if 0 <= x < 8 and 0 <= y < 8 and tablero[x][y] == -1:
+                tablero[x][y] = tablero[pos[0]][pos[1]] + 1
+                queue.append((x, y))
+                if (x, y) == final_pos:
+                    return tablero[x][y]
+    return -1
