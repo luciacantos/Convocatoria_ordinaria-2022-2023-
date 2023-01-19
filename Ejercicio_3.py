@@ -14,7 +14,7 @@ def numero_letras(n):
             cont = cont // 10
         resultado.append(palabra)
         n = len(palabra)
-        resultado.appen("four")
+        resultado.append("four")
         return resultado
 
 if __name__ == "__main__":
