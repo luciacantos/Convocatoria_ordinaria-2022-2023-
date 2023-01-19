@@ -9,5 +9,9 @@ def caballo(inicial, final):
     inicial_pos = (8 - int(inicial[1]), ord(inicial[0]) - ord('a'))
     final_pos = (8 - int(final[1]), ord(final[0]) - ord('a'))
 
- # crear una lista de movimientos del caballo
+# crear una lista de movimientos del caballo
     movimientos = [(2, 1), (2, -1), (-2, 1), (-2, -1), (1, 2), (1, -2), (-1, 2), (-1, -2)]
+
+# matriz de 8x8 que representa el tablero de ajedrez
+    tablero = [[-1] * 8 for _ in range(8)]
+    tablero[inicial_pos[0]][inicial_pos[1]] = 0
