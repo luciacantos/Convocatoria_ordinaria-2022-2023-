@@ -20,3 +20,9 @@ def numero_lunes(cumpleaños, fecha_actual):
                 lunes += 1
             dia_actual += datetime.timedelta(days=1)
         return lunes
+
+if __name__ == '__main__':
+    cumpleaños = datetime.date(1996, 5, 11)
+    fecha_actual = datetime.date(2023, 1, 19)
+    lunes = numero_lunes(cumpleaños, fecha_actual)
+    print("Han pasado",lunes,"lunes desde que entraste en edad laboral hasta hoy.")
