@@ -17,5 +17,5 @@ def numero_letras(n):
     return resultado
 
 if __name__ == "__main__":
-    print(numero_letras(60))
-    print(numero_letras(1))
+    print("[60] ->",numero_letras(60))
+    print("[1] ->",numero_letras(1))
